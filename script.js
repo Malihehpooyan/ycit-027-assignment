@@ -7,6 +7,7 @@ function getCatImage() {
             console.log(data[0].url);
             document.getElementById("catImage").src = data[0].url;
         })
-        .catch(error => console.error('Error:', error)); 
+       // .catch(error => console.error('Error:', error));//
+      .catch(error => console.error(error)); 
 }
 getCatImage();
