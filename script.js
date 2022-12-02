@@ -14,8 +14,3 @@ function getCatImage() {
     .catch((error) => console.error(error));
 }
 getCatImage();
-
-function Cats() {
-  const image = document.createElement("img");
-  image.src = "https://api.thecatapi.com/v1/images/search";
-}
