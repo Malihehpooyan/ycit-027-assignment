@@ -6,7 +6,8 @@ function getCatImage() {
       return response.json();
     })
     .then((data) => {
-      console.log(data[0].url);   
+      console.log(data[0].url);
+       document.getElementById("catImage").src = data[0].url;      
       image.src  = data[0].url;
     })
 
@@ -20,3 +21,4 @@ function Cats(){
     const image = document.createElement('img')
     image.src  = "https://api.thecatapi.com/v1/images/search"
 }
+
